@@ -91,9 +91,9 @@
                         }
                         */
                         // Load the Image.
-                        nodes = xmlDoc.selectNodes('//image');
-                        len = nodes.length;
-                        for (i = 0; i < len; i++) {
+                       var  nodes = xmlDoc.selectNodes('//image');
+                      var  len = nodes.length;
+                        for (var i = 0; i < len; i++) {
                             var image = {
                                 id: nodes[i].attributes[0].nodeValue,
                                 url: nodes[i].attributes[1].nodeValue

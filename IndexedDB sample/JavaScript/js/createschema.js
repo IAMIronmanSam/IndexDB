@@ -19,7 +19,7 @@
     function createDB() {
         // Create the request to open the database, named BookDB. If it doesn't exist, create it and immediately
         // upgrade to version 1.
-        var dbRequest = window.indexedDB.open("TestDB", 1);
+        var dbRequest = window.indexedDB.open("BookDB", 1);
 
         // Add asynchronous callback functions
         dbRequest.onerror = function () { WinJS.log && WinJS.log("Error creating database.", "sample", "error"); };
@@ -39,7 +39,7 @@
             SdkSample.db.close();
         }
         SdkSample.db = null;
-        var dbRequest = window.indexedDB.deleteDatabase("TestDB");
+        var dbRequest = window.indexedDB.deleteDatabase("BookDB");
         dbRequest.onerror = function () { WinJS.log && WinJS.log("Error deleting database.", "sample", "error"); };
         dbRequest.onsuccess = function () { WinJS.log && WinJS.log("Database deleted.", "sample", "status"); };
         dbRequest.onblocked = function () {
