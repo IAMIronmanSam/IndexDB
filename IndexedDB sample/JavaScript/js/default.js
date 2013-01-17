@@ -13,8 +13,8 @@
     var scenarios = [
         { url: "/html/createschema.html", title: "Create IndexedDB Schema" },
         { url: "/html/populatedata.html", title: "Populate Initial Data" },
-        { url: "/html/readdata.html", title: "Reading Data" },
-        { url: "/html/writedata.html", title: "Writing Data" }
+        { url: "/html/readdata.html", title: "Reading Data" }
+        
     ];
 
     var db = null;
